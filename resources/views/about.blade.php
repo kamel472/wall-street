@@ -1,84 +1,9 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.main')
 
-  <head>
-    <title>Wall Street Group</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
-
-    <link href="{{ asset('fonts/icomoon/style.css') }}" rel="stylesheet">
-
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap-datepicker.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/css/jquery.fancybox.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/owl.theme.default.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('fonts/flaticon/font/flaticon.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/aos.css') }}" rel="stylesheet">
-
-    
-
-    <!-- MAIN CSS -->
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-
-  </head>
-
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-    
-    <div class="site-wrap" id="home-section">
-
-      <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
-          </div>
-        </div>
-        <div class="site-mobile-menu-body"></div>
-      </div>
-
-
-
-      <header class="site-navbar site-navbar-target" role="banner">
-
-        <div class="container">
-          <div class="row align-items-center position-relative">
-
-            <div class="col-3 ">
-              <div class="site-logo">
-                <a href="index.html">CarRent</a>
-              </div>
-            </div>
-
-            <div class="col-9  text-right">
-              
-
-              <span class="d-inline-block d-lg-none"><a href="#" class="text-white site-menu-toggle js-menu-toggle py-5 text-white"><span class="icon-menu h3 text-white"></span></a></span>
-
-              
-
-              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
-                <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li><a href="index.html" class="nav-link">Home</a></li>
-                  <li><a href="services.html" class="nav-link">Services</a></li>
-                  <li><a href="cars.html" class="nav-link">Cars</a></li>
-                  <li class="active"><a href="about.html" class="nav-link">About</a></li>
-                  <li><a href="blog.html" class="nav-link">Blog</a></li>
-                  <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-
-            
-          </div>
-        </div>
-
-      </header>
+@section('body')
 
     <div class="ftco-blocks-cover-1">
-      <div class="ftco-cover-1 overlay innerpage" style="background-image: url('images/hero_2.jpg')">
+      <div class="ftco-cover-1 overlay innerpage" style="background-image: url('images/house2.jpg')">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-6 text-center">
@@ -90,14 +15,11 @@
       </div>
     </div>
 
-    
-
-
     <div class="site-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2">
-            <img src="images/hero_2.jpg" alt="Image" class="img-fluid">
+            <img src="images/banner.jpg" alt="Image" class="img-fluid">
           </div>
           <div class="col-lg-4 mr-auto">
             <h2>Our Mission</h2>
@@ -347,4 +269,5 @@
   </body>
 
 </html>
+@endsection
 
