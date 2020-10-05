@@ -3,46 +3,54 @@
 
 @section('body')
 
-    <div class="ftco-blocks-cover-1">
-      <div class="ftco-cover-1 overlay" style="background-image: url('images/house.jpg')">
+<div class="ftco-blocks-cover-1">
+  <div class="ftco-cover-1 overlay innerpage" style="background-image: url('images/house.jpg')">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h1>Own Your Dream House</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <!--
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-5">
+            
               <div class="feature-car-rent-box-1">
-                <h3>Range Rover S7</h3>
+              
+                <h3>Lorem ipsum dolor</h3>
                 <ul class="list-unstyled">
                   <li>
-                    <span>Doors</span>
-                    <span class="spec">4</span>
+                    <span>Location</span>
+                    <span class="spec"></span>
                   </li>
                   <li>
-                    <span>Seats</span>
-                    <span class="spec">6</span>
+                    <span>Downpayment</span>
+                    <span class="spec"></span>
                   </li>
                   <li>
-                    <span>Lugage</span>
-                    <span class="spec">2 Suitcase/2 Bags</span>
-                  </li>
-                  <li>
-                    <span>Transmission</span>
-                    <span class="spec">Automatic</span>
-                  </li>
-                  <li>
-                    <span>Minium age</span>
-                    <span class="spec">Automatic</span>
+                    <span>Installments</span>
+                    <span class="spec"></span>
                   </li>
                 </ul>
                 <div class="d-flex align-items-center bg-light p-3">
                   <span>$150/day</span>
-                  <a href="contact.html" class="ml-auto btn btn-primary">Rent Now</a>
+                  <a href="contact.html" class="ml-auto btn btn-primary">Search</a>
+                  
                 </div>
+                
               </div>
+              
             </div>
           </div>
         </div>
+      -->
       </div>
     </div>
-
+<!--
     <div class="site-section pt-0 pb-0 bg-light">
       <div class="container">
         <div class="row">
@@ -85,7 +93,7 @@
         </div>
       </div>
     </div>
-
+-->
     
 
     <div class="site-section bg-light">
@@ -102,87 +110,68 @@
           </div>
           <div class="col-lg-9">
 
-
-
-
             <div class="nonloop-block-13 owl-carousel">
               <div class="item-1">
-                <a href="#"><img src="images/img_1.jpg" alt="Image" class="img-fluid"></a>
+                <a href="#"><img src="images/carousal1.jpg" alt="Image" class="img-fluid"></a>
                 <div class="item-1-contents">
                   <div class="text-center">
-                  <h3><a href="#">Range Rover S64 Coupe</a></h3>
-                  <div class="rating">
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                  </div>
-                  <div class="rent-price"><span>$250/</span>day</div>
+                  
+                  <div class="rent-price"><span>700000 LE</span></div>
                   </div>
                   <ul class="specs">
                     <li>
-                      <span>Doors</span>
-                      <span class="spec">4</span>
+                      <span>Location</span>
+                      <span class="spec">Cairo</span>
                     </li>
                     <li>
-                      <span>Seats</span>
-                      <span class="spec">5</span>
+                      <span>Level</span>
+                      <span class="spec">3</span>
                     </li>
                     <li>
-                      <span>Transmission</span>
-                      <span class="spec">Automatic</span>
+                      <span>Downpayment</span>
+                      <span class="spec">30%</span>
                     </li>
                     <li>
-                      <span>Minium age</span>
-                      <span class="spec">18 years</span>
+                      <span>Installment</span>
+                      <span class="spec">6 years</span>
                     </li>
                   </ul>
                   <div class="d-flex action">
-                    <a href="contact.html" class="btn btn-primary">Rent Now</a>
+                    <a href="{{'/show'}}" class="btn btn-primary">Show</a>
                   </div>
                 </div>
               </div>
 
 
               <div class="item-1">
-                <a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
+                <a href="#"><img src="images/carousal2.jpg" alt="Image" class="img-fluid"></a>
                 <div class="item-1-contents">
                   <div class="text-center">
-                  <h3><a href="#">Range Rover S64 Coupe</a></h3>
-                  <div class="rating">
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                    <span class="icon-star text-warning"></span>
-                  </div>
-                  <div class="rent-price"><span>$250/</span>day</div>
+                  <div class="rent-price"><span>800000 LE/</span></div>
                   </div>
                   <ul class="specs">
                     <li>
-                      <span>Doors</span>
-                      <span class="spec">4</span>
+                      <span>Location</span>
+                      <span class="spec">Cairo</span>
                     </li>
                     <li>
-                      <span>Seats</span>
-                      <span class="spec">5</span>
+                      <span>Level</span>
+                      <span class="spec">3</span>
                     </li>
                     <li>
-                      <span>Transmission</span>
-                      <span class="spec">Automatic</span>
+                      <span>Downpayment</span>
+                      <span class="spec">30%</span>
                     </li>
                     <li>
-                      <span>Minium age</span>
-                      <span class="spec">18 years</span>
+                      <span>Installment</span>
+                      <span class="spec">6 years</span>
                     </li>
                   </ul>
                   <div class="d-flex action">
-                    <a href="contact.html" class="btn btn-primary">Rent Now</a>
+                    <a href="{{'/show'}}" class="btn btn-primary">Show</a>
                   </div>
                 </div>
               </div>
-
             </div>
             
           </div>
@@ -206,7 +195,7 @@
                 <span class="flaticon-car-1"></span>
               </span>
               <div class="service-1-contents">
-                <h3>Repair</h3>
+                <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
               </div>
             </div>
@@ -217,7 +206,7 @@
                 <span class="flaticon-traffic"></span>
               </span>
               <div class="service-1-contents">
-                <h3>Car Accessories</h3>
+                <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
               </div>
             </div>
@@ -228,7 +217,7 @@
                 <span class="flaticon-valet"></span>
               </span>
               <div class="service-1-contents">
-                <h3>Own a Car</h3>
+                <h3>Lorem ipsum </h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam.</p>
               </div>
             </div>
@@ -236,39 +225,8 @@
         </div>
       </div>
     </div>
-
-
-    <div class="container site-section mb-5">
-      <div class="row justify-content-center text-center">
-        <div class="col-7 text-center mb-5">
-          <h2>How it works</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
-        </div>
-      </div>
-      <div class="how-it-works d-flex">
-        <div class="step">
-          <span class="number"><span>01</span></span>
-          <span class="caption">Time &amp; Place</span>
-        </div>
-        <div class="step">
-          <span class="number"><span>02</span></span>
-          <span class="caption">Car</span>
-        </div>
-        <div class="step">
-          <span class="number"><span>03</span></span>
-          <span class="caption">Details</span>
-        </div>
-        <div class="step">
-          <span class="number"><span>04</span></span>
-          <span class="caption">Checkout</span>
-        </div>
-        <div class="step">
-          <span class="number"><span>05</span></span>
-          <span class="caption">Done</span>
-        </div>
-
-      </div>
-    </div>
+  </div>
+</div>
     
     
     <div class="site-section bg-light">
@@ -317,63 +275,6 @@
       </div>
     </div>
 
-
-    <div class="site-section bg-white">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-7 text-center mb-5">
-            <h2>Our Blog</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo assumenda, dolorum necessitatibus eius earum voluptates sed!</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="post-entry-1 h-100">
-              <a href="single.html">
-                <img src="images/post_1.jpg" alt="Image"
-                 class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                
-                <h2><a href="single.html">The best car rent in the entire planet</a></h2>
-                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="post-entry-1 h-100">
-              <a href="single.html">
-                <img src="images/img_2.jpg" alt="Image"
-                 class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                
-                <h2><a href="single.html">The best car rent in the entire planet</a></h2>
-                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="post-entry-1 h-100">
-              <a href="single.html">
-                <img src="images/img_3.jpg" alt="Image"
-                 class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                
-                <h2><a href="single.html">The best car rent in the entire planet</a></h2>
-                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos soluta, dolore harum molestias consectetur.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     @endsection
 
     

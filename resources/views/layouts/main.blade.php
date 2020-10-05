@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>Car Rent &mdash; Free Website Template by Colorlib</title>
+    <title>Wall street </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -20,13 +20,8 @@
     <link href="{{ asset('fonts/flaticon/font/flaticon.css') }}" rel="stylesheet">
     <link href="{{ asset('css/aos.css') }}" rel="stylesheet">
 
-    
-
     <!-- MAIN CSS -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-   
-
-    
 
   </head>
 
@@ -69,10 +64,7 @@
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
                   <li class="active"><a href="{{'/'}}" class="nav-link">Home</a></li>
-                  <li><a href="services.html" class="nav-link">Services</a></li>
-                  <li><a href="cars.html" class="nav-link">Cars</a></li>
                   <li><a href="{{'/about'}}" class="nav-link">About</a></li>
-                  <li><a href="blog.html" class="nav-link">Blog</a></li>
                   <li><a href="{{'/contact'}}" class="nav-link">Contact</a></li>
                 </ul>
               </nav>
@@ -89,10 +81,6 @@
       <footer class="site-footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3">
-            <h2 class="footer-heading mb-4">About Us</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-          </div>
           <div class="col-lg-8 ml-auto">
             <div class="row">
               <div class="col-lg-3">
