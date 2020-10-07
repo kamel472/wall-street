@@ -13,6 +13,9 @@
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Sarabun:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 
+	<!-- Fontawsome --> 
+    <script src="https://kit.fontawesome.com/e2b5f74269.js" crossorigin="anonymous"></script>
+
 	<!-- Stylesheets -->
 	<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
@@ -25,11 +28,14 @@
 	<!-- Main Stylesheets -->
 	<link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css" rel="stylesheet">
 
-	<!--[if lt IE 9]>
+
+	
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+	
 
 </head>
 <body>
@@ -41,7 +47,7 @@
 	<!-- Header section -->
 	<header class="header-section">
 		<!-- logo -->
-		<a href="index.html" class="site-logo">
+		<a href="{{'/home'}}" class="site-logo">
 			<img src="img/logo.jpg" alt="">
 		</a>
 		<div class="nav-switch">
@@ -52,7 +58,7 @@
 				<li><a href="{{'/'}}">Home</a></li>
 				<li><a href="{{'/about'}}">About Us</a></li>
 				<li><a href="{{'/show'}}">Property</a></li>
-				<li><a href="developments.html">Developments</a></li>
+				<li><a href="{{route('properties.index')}}">Properties</a></li>
 				<li><a href="{{'/contact'}}">Contact</a></li>
 			</ul>
 		</div>

@@ -14,10 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+Route::get('/', 'PropertyController@home')->name('home');
+Route::get('/properties', 'PropertyController@index')->name('properties.index');
+Route::get('/properties/{property}', 'PropertyController@show')->name('properties.show');
 
-Route::get('/', function () {
-    return view('home');
-});
+//Route::get('/', function () {
+  //  return view('home');
+//});
 
 Route::get('/about', function () {
     return view('about');
@@ -28,7 +31,7 @@ Route::get('/contact', function () {
 });
 
 Route::get('/show', function () {
-    return view('show');
+    return view('property.show');
 });
 
 Route::get('/index', function () {

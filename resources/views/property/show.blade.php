@@ -2,20 +2,8 @@
 
 @section('body')
 
-<!-- Hero section -->
-<section class="hero-section">
-  <div class="hero-social-warp">
-    <div class="hero-social">
-      <a href=""><i class="fa fa-facebook"></i></a>
-      <a href=""><i class="fa fa-linkedin"></i></a>
-      <a href=""><i class="fa fa-twitter"></i></a>
-      <a href=""><i class="fa fa-youtube-play"></i></a>
-      <a href=""><i class="fa fa-instagram"></i></a>
-    </div>
-  </div>
-	
 	<!-- Page top section -->
-	<section class="page-top-section set-bg" data-setbg="img/page-top-bg/2.jpg">
+	<section class="page-top-section set-bg" data-setbg="img/carousal1.jpg">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5">
@@ -44,61 +32,59 @@
 			<div class="row">
 				<div class="col-xl-6 col-lg-7">
 					<div class="property-details">
-						<h2>MODERN VILLA 1</h2>
+						<h2>{{$property->title}}</h2>
+						<BR>
+						<h4><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;{{$property->location}}</h4>
+						<BR>
 						<div class="property-info">
-							<h6>Lot Size</h6>
+							<h6>AREA</h6>
 							<div class="pi-icon">
-								<i class="flaticon-151-plans"></i>
-								<span>2561 sqft </span>
+								<i class="fas fa-vector-square"></i>
+								<span>{{$property->area}} </span>
 							</div>
 						</div>
 						<div class="property-info">
-							<h6>Beds</h6>
+							<h6>Rooms</h6>
 							<div class="pi-icon">
-								<i class="flaticon-151-beds"></i>
-								<span>3</span>
+								<i class="fas fa-door-open"></i>
+								<span>{{$property->rooms}}</span>
 							</div>
 						</div>
 						<div class="property-info">
 							<h6>Baths</h6>
 							<div class="pi-icon">
-								<i class="flaticon-151-relax"></i>
-								<span>2</span>
+								<i class="fa fa-bath" aria-hidden="true"></i>
+								<span>{{$property->baths}}</span>
 							</div>
 						</div>
-						<div class="property-info">
-							<h6>Garage</h6>
-							<div class="pi-icon">
-								<i class="flaticon-151-transportation"></i>
-								<span>1 </span>
-							</div>
-						</div>
+						
 					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed sollicitudin sem. Curabitur sollicitudin enim vel lacus vehicula, vitae so-dales ipsum porta.</p>
+					
 				</div>
 				<div class="col-xl-6 col-lg-5 text-lg-right text-left">
 					<div class="property-price">
-						<h2>$445,000</h2>
-						<p>(taxes excluded)</p>
+						<h2>{{$property->price}} LE</h2>
+						
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	
 	<!-- Property details section end -->
 
 	<!-- Property features slider -->
 	<div class="property-features-slider owl-carousel">
 		<a href="img/property-gallery/1.jpg" class="img-popup-gallery">
-			<img src="img/property-gallery/1.jpg" alt="">
+			<img src="img/property-gallery/carousal1.jpg" alt="">
 			<i class="flaticon-151-reading-glasses"></i>
 		</a>
 		<a href="img/property-gallery/2.jpg" class="img-popup-gallery">
-			<img src="img/property-gallery/2.jpg" alt="">
+			<img src="img/property-gallery/carousal1.jpg" alt="">
 			<i class="flaticon-151-reading-glasses"></i>
 		</a>
 		<a href="img/property-gallery/3.jpg" class="img-popup-gallery">
-			<img src="img/property-gallery/3.jpg" alt="">
+			<img src="img/carousal1.jpg" alt="">
 			<i class="flaticon-151-reading-glasses"></i>
 		</a>
 		<a href="img/property-gallery/2.jpg" class="img-popup-gallery">
@@ -114,25 +100,27 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="property-overview-text">
-						<h4>GENERAL OVERVIEW</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed sollicitudin sem. Curabitur sollicitudin enim vel lacus vehicula, vitae sodales ipsum porta.</p>
+						<h4>DESCRIPTION</h4>
+						<p>{{$property->description}}</p>
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="property-overview-text">
-						<h4>GENERAL OVERVIEW</h4>
+						<h4>FINANCIAL INFORMATION</h4>
 						<ul>
-							<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-							<li>Praesent tincidunt diam in ante faucibus tristique.</li>
-							<li>Vivamus id nisl sed mi varius lobortis.</li>
-							<li>Suspendisse sit amet erat placerat, molestie neque id</li>
-							<li>Fusce pretium libero sit amet ipsum posuere pretium.</li>
-							<li>Praesent tincidunt diam in ante faucibus tristique.</li>
+							<li>PRICE: {{$property->price}} LE</li>
+							<li>DOWNPAYMENT: {{$property->downpayment}}%</li>
+							<li>INSTALLMENTS: {{$property->installments}} YEARS</li>
+							
 						</ul>
 					</div>
 				</div>
+				<a href="" class="site-btn">CONTACT US</a>
+				
 			</div>
 		</div>
+		<BR><BR><BR>
+		<!--
 		<div class="container-fluid pt-5">
 			<div class="row">
 				<div class="col-lg-6 p-0">
@@ -160,6 +148,7 @@
 				</div>
 			</div>
 		</div>
+		-->
 	</section>
 	<!-- Property overview section end-->
 
