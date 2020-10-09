@@ -5,11 +5,8 @@
 <section class="hero-section">
   <div class="hero-social-warp">
     <div class="hero-social">
-      <a href=""><i class="fa fa-facebook"></i></a>
-      <a href=""><i class="fa fa-linkedin"></i></a>
-      <a href=""><i class="fa fa-twitter"></i></a>
-      <a href=""><i class="fa fa-youtube-play"></i></a>
-      <a href=""><i class="fa fa-instagram"></i></a>
+		<a href="https://www.facebook.com/WallStreetGroupEgy/"><i class="fa fa-facebook"></i></a>
+		<a href="https://instagram.com/wallstreet.group?igshid=16gzcxx4ixaqs"><i class="fa fa-linkedin"></i></a>
     </div>
   </div>
   
@@ -18,7 +15,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-6 col-lg-7">
-							<h2>3 Modern homes for modern thinking people. </h2>
+							<h2>We bring to you various opportunities in many real estate projects </h2>
 						</div>
 					</div>
 				</div>
@@ -27,7 +24,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-6 col-lg-7">
-							<h2>4 Modern homes for modern thinking people. </h2>
+							<h2>Offers and easy installments systems on any unit you choose </h2>
 						</div>
 					</div>
 				</div>
@@ -36,7 +33,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-6 col-lg-7">
-							<h2>6 Modern homes for modern thinking people. </h2>
+							<h2>We can help you to find your perfect destination </h2>
 						</div>
 					</div>
 				</div>
@@ -46,21 +43,7 @@
 		<div class="hero-nav-slider-warp">
 			<div class="container">
 				<div class="hero-nav-slider owl-carousel">
-					<div class="hns-item">
-						<h5>3 bedrooms version</h5>
-						<p>Availble from March 2019</p>
-						<span>$145,000</span>
-					</div>
-					<div class="hns-item">
-						<h5>4 bedrooms version + PRIVATE POOL </h5>
-						<p>Availble from March 2019</p>
-						<span>$145,000</span>
-					</div>
-					<div class="hns-item">
-						<h5>6 bedrooms version + pRIVATE POOL  </h5>
-						<p>Availble from March 2019</p>
-						<span>$145,000</span>
-					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -111,188 +94,65 @@
 	<!-- Intro section -->
 	<section class="intro-section">
 		<div class="container">
-			<div class="section-title">
-				<h2>our houses</h2>
-			</div>
+			
+			<h2><i class="fas fa-bookmark" style="color: blue;"></i>&nbsp;&nbsp;OUR HOUSES</h2>
+			<BR><BR><BR>
 			<div class="row">
+				@foreach ($properties as $property)
 				<div class="col-lg-8">
 					<div class="intro-img-box">
-						<h4>MODERN VILLA 1</h4>
+						<h4>{{$property->title}}</h4>
 						<img src="img/intro/1.jpg" alt="">
 					</div>
 				</div>
 				<div class="col-lg-4 align-items-end d-flex">
 					<div class="intro-text-box">
-						<p>Nam gravida elit non massa congue, ac commodo ipsum mattis. Fusce erat magna, egestas vitae arcu non, posu-ere iaculis leo. Sed a lectus risus. Morbi eros sapien, inter-dum ut sollicitudin eget, porttitor nec elit. Fusce dignis-sim velit sit amet ligula dapibus fringilla. Cras fermentum consequat ornare. Etiam tempus ex nec nibh eleifend, nec tempus ipsum finibus. </p>
-						<a href="" class="site-btn">MORE INFO</a>
+						<p> {{$property->description}}</p>
+						<a href="{{route('properties.show' , $property->id)}}" class="site-btn btn btn-outline-primary">MORE INFO</a>
 					</div>
 				</div>
-				<div class="col-lg-4 align-items-end d-flex order-2 order-lg-1">
-					<div class="intro-text-box">
-						<p>Nam gravida elit non massa congue, ac commodo ipsum mattis. Fusce erat magna, egestas vitae arcu non, posu-ere iaculis leo. Sed a lectus risus. Morbi eros sapien, inter-dum ut sollicitudin eget, porttitor nec elit. Fusce dignis-sim velit sit amet ligula dapibus fringilla. Cras fermentum consequat ornare. Etiam tempus ex nec nibh eleifend, nec tempus ipsum finibus. </p>
-						<a href="" class="site-btn">MORE INFO</a>
-					</div>
-				</div>
-				<div class="col-lg-8 order-1 order-lg-2">
-					<div class="intro-img-box">
-						<h4>MODERN VILLA 1</h4>
-						<img src="img/intro/2.jpg" alt="">
-					</div>
-				</div>
+				@endforeach
+				
 			</div>
 		</div>
 	</section>
 	<!-- Intro section end-->
 	
-	<!-- Design section end-->
-	<section class="design-section">
-		<div class="container">
-			<div class="section-title st-light">
-				<h2>our houses</h2>
-			</div>
-		</div>
-		<div class="design-slider owl-carousel">
-			<a href="img/design/1.jpg" class="img-popup-gallery">
-				<img src="img/design/1.jpg" alt="">
-				<i class="flaticon-151-reading-glasses"></i>
-			</a>
-			<a href="img/design/2.jpg" class="img-popup-gallery">
-				<img src="img/design/2.jpg" alt="">
-				<i class="flaticon-151-reading-glasses"></i>
-			</a>
-			<a href="img/design/3.jpg" class="img-popup-gallery">
-				<img src="img/design/3.jpg" alt="">
-				<i class="flaticon-151-reading-glasses"></i>
-			</a>
-			<a href="img/design/2.jpg" class="img-popup-gallery">
-				<img src="img/design/2.jpg" alt="">
-				<i class="flaticon-151-reading-glasses"></i>
-			</a>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="design-text text-white">
-						<h4>INTERIOR </h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="design-text text-white">
-						<h4>ENVIORMENT FRIENDLY</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Design section end-->
 	
-	<!-- Location section-->
-	<section class="location-section spad">
-		<div class="container">
-			<div class="section-title">
-				<h2>location</h2>
-			</div>
-			<div class="row">
-				<div class="col-xl-10 offset-xl-1">
-					<div class="tab-content location-tab">
-						<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
-							<img src="img/location/1.jpg" alt="">
-							<a href="https://www.youtube.com/watch?v=Sz_1tkcU0Co" class="play-btn"><img src="img/play-icon.png" alt=""></a>
-						</div>
-						<div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
-							<img src="img/location/2.jpg" alt="">
-							<a href="https://www.youtube.com/watch?v=7JTHzDiJ2NA" class="play-btn"><img src="img/play-icon.png" alt=""></a>
-						</div>
-						<div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-							<img src="img/location/3.jpg" alt="">
-							<a href="https://www.youtube.com/watch?v=g3tB7aFoyjY" class="play-btn"><img src="img/play-icon.png" alt=""></a>
-						</div>
-						<div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4">
-							<img src="img/location/4.jpg" alt="">
-							<a href="youtube.com/watch?v=slJrBtarjgo" class="play-btn"><img src="img/play-icon.png" alt=""></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-12">
-					<ul class="nav nav-tabs location-tab-nav" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">
-								<img src="img/location/thumb-1.jpg" alt="">
-								<h5>Surroundings</h5>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">
-								<img src="img/location/thumb-2.jpg" alt="">
-								<h5>Interior Design</h5>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">
-								<img src="img/location/thumb-3.jpg" alt="">
-								<h5>Comunity Pool</h5>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="4-tab" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="false">
-								<img src="img/location/thumb-4.jpg" alt="">
-								<h5>Views</h5>
-							</a>
-						</li>
-					</ul>
-				</div>	
-			</div>
-		</div>
-	</section>
-	<!-- Location section end-->
+	
 
 	<!-- Features section -->
 	<section class="features-section">
 		<div class="container">
-			<div class="section-title">
-				<h2>features</h2>
-			</div>
+			
+				<h2><i class="fas fa-bookmark" style="color: blue;"></i>&nbsp;&nbsp;FEATURES</h2>
+			
 		</div>
+		<BR><BR>
 		<div class="features-slider owl-carousel">
 			<div class="feature-box">
-				<i class="flaticon-151-banker"></i>
-				<h5>ECO-FRIENDLY HOMES</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipi-scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+				<i class="fas fa-hands-helping"></i>
+				<h5>FRIENDLY ASSISTANCE </h5>
+				<p>We assist our clients whatever it takes.
+				If we saw not matching property we will tell him to wait for the fit one. </p>
 			</div>		
 			<div class="feature-box">
-				<i class="flaticon-151-security-system"></i>
-				<h5>SECURE AREA</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi-dunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+				<i class="fas fa-hand-holding-usd"></i>
+				<h5>INSTALLMENTS</h5>
+				<p> We offer an exclusive service which we can buy secondhand home by installments.
+					You will just pick your perfect home, contact us and we will buy it for you</p>
 			</div>		
 			<div class="feature-box">
-				<i class="flaticon-151-maps-and-flags-1"></i>
-				<h5>FREE PARKING</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi-dunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+				<i class="fas fa-hotel"></i>
+				<h5>LUXURIOUS</h5>
+				<p> We bring for you the luxurious variety of homes, so you will be able to pick your better ones. </p>
 			</div>		
-			<div class="feature-box">
-				<i class="flaticon-151-step-ladder"></i>
-				<h5>COMUNITY POOL</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi-dunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
-			</div>		
-			<div class="feature-box">
-				<i class="flaticon-151-real-estate-6"></i>
-				<h5>BEST DEALS</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi-dunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
-			</div>		
+				
 		</div>
 	</section>
 	<!-- Features section end-->
 
-	<!-- Call to action section -->
-	<section class="call-to-action-section set-bg" data-setbg="img/cta-bg.jpg">
-		<div class="container text-white text-center">
-			<h2>Ask our top consultants for an personalized offer today. </h2>
-			<button class="site-btn sb-light sb-big">CALL 800-1-5141</button>
-		</div>
-	</section>
-  <!-- Call to action section end-->
+	
   @endsection
 	
 	

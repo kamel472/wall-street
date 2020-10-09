@@ -3,24 +3,20 @@
 @section('body')
 
 	<!-- Page top section -->
-	<section class="page-top-section set-bg" data-setbg="img/carousal1.jpg">
+	<section class="page-top-section set-bg" data-setbg="{{URL::asset('img/page-top-bg/2.jpg')}}">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5">
 					<div class="page-top-text text-white">
 						<h2>Property Page</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit mauris congue.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="hero-social-warp">
 			<div class="hero-social">
-				<a href=""><i class="fa fa-facebook"></i></a>
-				<a href=""><i class="fa fa-linkedin"></i></a>
-				<a href=""><i class="fa fa-twitter"></i></a>
-				<a href=""><i class="fa fa-youtube-play"></i></a>
-				<a href=""><i class="fa fa-instagram"></i></a>
+				<a href="https://www.facebook.com/WallStreetGroupEgy/"><i class="fa fa-facebook"></i></a>
+				<a href="https://instagram.com/wallstreet.group?igshid=16gzcxx4ixaqs"><i class="fa fa-linkedin"></i></a>
 			</div>
 		</div>
 	</section>
@@ -75,23 +71,24 @@
 
 	<!-- Property features slider -->
 	<div class="property-features-slider owl-carousel">
-		<a href="img/property-gallery/1.jpg" class="img-popup-gallery">
-			<img src="img/property-gallery/carousal1.jpg" alt="">
+		<a href="{{URL::asset('img/sample1a.jpeg')}}" class="img-popup-gallery">
+		<img src="{{URL::asset('img/sample1a.jpeg')}}" alt="">
 			<i class="flaticon-151-reading-glasses"></i>
 		</a>
-		<a href="img/property-gallery/2.jpg" class="img-popup-gallery">
-			<img src="img/property-gallery/carousal1.jpg" alt="">
+		<a href="{{URL::asset('img/sample1b.jpeg')}}" class="img-popup-gallery">
+		<img src="{{URL::asset('img/sample1b.jpeg')}}" alt="">
 			<i class="flaticon-151-reading-glasses"></i>
 		</a>
-		<a href="img/property-gallery/3.jpg" class="img-popup-gallery">
-			<img src="img/carousal1.jpg" alt="">
+		<a href="{{URL::asset('img/sample1c.jpeg')}}" class="img-popup-gallery">
+		<img src="{{URL::asset('img/sample1c.jpeg')}}" alt="">
 			<i class="flaticon-151-reading-glasses"></i>
 		</a>
-		<a href="img/property-gallery/2.jpg" class="img-popup-gallery">
-			<img src="img/property-gallery/2.jpg" alt="">
+		<a href="{{URL::asset('img/sample1d.jpeg')}}" class="img-popup-gallery">
+			<img src="{{URL::asset('img/sample1d.jpeg')}}" alt="">
 			<i class="flaticon-151-reading-glasses"></i>
 		</a>
 	</div>
+
 	<!-- Property features slider end -->
 
 	<!-- Property overview section-->
@@ -115,7 +112,7 @@
 						</ul>
 					</div>
 				</div>
-				<a href="" class="site-btn">CONTACT US</a>
+				<a href="" class="site-btn btn btn-outline-primary">CONTACT US</a>
 				
 			</div>
 		</div>

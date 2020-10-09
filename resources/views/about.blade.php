@@ -6,11 +6,8 @@
 <section class="hero-section">
 		<div class="hero-social-warp">
 			<div class="hero-social">
-				<a href=""><i class="fa fa-facebook"></i></a>
-				<a href=""><i class="fa fa-linkedin"></i></a>
-				<a href=""><i class="fa fa-twitter"></i></a>
-				<a href=""><i class="fa fa-youtube-play"></i></a>
-				<a href=""><i class="fa fa-instagram"></i></a>
+			<a href="https://www.facebook.com/WallStreetGroupEgy/"><i class="fa fa-facebook"></i></a>
+            <a href="https://instagram.com/wallstreet.group?igshid=16gzcxx4ixaqs"><i class="fa fa-linkedin"></i></a>
 			</div>
 		</div>
 	<!-- Page top section -->
@@ -28,11 +25,8 @@
 		</div>
 		<div class="hero-social-warp">
 				<div class="hero-social">
-					<a href=""><i class="fa fa-facebook"></i></a>
-					<a href=""><i class="fa fa-linkedin"></i></a>
-					<a href=""><i class="fa fa-twitter"></i></a>
-					<a href=""><i class="fa fa-youtube-play"></i></a>
-					<a href=""><i class="fa fa-instagram"></i></a>
+				<a href="https://www.facebook.com/WallStreetGroupEgy/"><i class="fa fa-facebook"></i></a>
+            <a href="https://instagram.com/wallstreet.group?igshid=16gzcxx4ixaqs"><i class="fa fa-linkedin"></i></a>
 				</div>
 			</div>
 	</section>
