@@ -89,66 +89,7 @@
 	<!-- Milestone section end -->
 
 
-	<!-- Team section -->
-	<section class="team-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="team-member">
-						<div class="member-pic">
-							<img src="img/team/1.jpg" alt="">
-							<a href="#" class="member-link">+</a>
-						</div>
-						<div class="member-info">
-							<h4>JANE DOE</h4>
-							<h5>General Manager</h5>
-							<p>Lorem ipsum dolor sit amet, consecte-tur adipiscing elit. Maecenas sed sollici-tudin sem.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="team-member">
-						<div class="member-pic">
-							<img src="img/team/2.jpg" alt="">
-							<a href="#" class="member-link">+</a>
-						</div>
-						<div class="member-info">
-							<h4>JANE DOE</h4>
-							<h5>General Manager</h5>
-							<p>Lorem ipsum dolor sit amet, consecte-tur adipiscing elit. Maecenas sed sollici-tudin sem.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="team-member">
-						<div class="member-pic">
-							<img src="img/team/3.jpg" alt="">
-							<a href="#" class="member-link">+</a>
-						</div>
-						<div class="member-info">
-							<h4>JANE DOE</h4>
-							<h5>General Manager</h5>
-							<p>Lorem ipsum dolor sit amet, consecte-tur adipiscing elit. Maecenas sed sollici-tudin sem.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="team-member">
-						<div class="member-pic">
-							<img src="img/team/4.jpg" alt="">
-							<a href="#" class="member-link">+</a>
-						</div>
-						<div class="member-info">
-							<h4>JANE DOE</h4>
-							<h5>General Manager</h5>
-							<p>Lorem ipsum dolor sit amet, consecte-tur adipiscing elit. Maecenas sed sollici-tudin sem.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Team section end -->
+	
 
 	
 	@endsection

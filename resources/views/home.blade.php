@@ -95,7 +95,7 @@
 	<section class="intro-section">
 		<div class="container">
 			
-			<h2><i class="fas fa-bookmark" style="color: blue;"></i>&nbsp;&nbsp;OUR HOUSES</h2>
+			<h2><i class="fas fa-home" style="color: blue"></i> &nbsp;&nbsp;OUR HOUSES</h2>
 			<BR><BR><BR>
 			<div class="row">
 				@foreach ($properties as $property)
@@ -125,7 +125,7 @@
 	<section class="features-section">
 		<div class="container">
 			
-				<h2><i class="fas fa-bookmark" style="color: blue;"></i>&nbsp;&nbsp;FEATURES</h2>
+				<h2><i class="fas fa-list" style="color: blue;"></i></i>&nbsp;&nbsp;FEATURES</h2>
 			
 		</div>
 		<BR><BR>

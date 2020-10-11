@@ -26,7 +26,7 @@ class PropertyController extends Controller
      */
     public function create()
     {
-        //
+        return view ('property.create' );
     }
 
     /**
@@ -37,7 +37,21 @@ class PropertyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $property = new Property;
+        
+        $property->title = $request->title;
+        $property->description = $request->description;
+        $property->location = $request->location;
+        $property->area = $request->area;
+        $property->rooms = $request->rooms;
+        $property->baths = $request->baths;
+        $property->price = $request->price;
+        $property->downpayment = $request->downpayment;
+        $property->installments = $request->installments;
+        $property->images = $request->images;
+        $property->save();
+
+        return redirect('/properties')->with('message' , 'property posted');
     }
 
     /**
@@ -70,9 +84,25 @@ class PropertyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Property $property)
     {
-        //
+        $title = $request->title;
+        $description = $request->description;
+        $location = $request->location;
+        $area = $request->area;
+        $rooms = $request->rooms;
+        $baths = $request->baths;
+        $price = $request->price;
+        $downpayment = $request->downpayment;
+        $installments = $request->installments;
+        //$images = $request->images;
+
+   
+       $property->update(['title'=> $title,'description'=>$description ,'location'=>$location , 
+       'area'=>$area , 'rooms'=>$rooms , 'baths'=>$baths , 'price'=>$price , 'downpayment'=>$downpayment
+        , 'installments'=>$installments]);
+       
+       return redirect()->back()->with();
     }
 
     /**
@@ -81,8 +111,9 @@ class PropertyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy( Property $property)
     {
-        //
+        $property->delete();
+        return redirect('properties/');
     }
 }

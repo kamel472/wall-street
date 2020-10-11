@@ -225,4 +225,6 @@ $(window).on('load', function() {
 		mainClass: 'mfp-fade',
 	});
 
+	
+
 })(jQuery);
