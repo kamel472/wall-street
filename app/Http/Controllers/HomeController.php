@@ -14,7 +14,23 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $properties = Property::all()->random(3);;
+        $numberOfProperties = Property::all()->count();
+        
+        if($numberOfProperties<3){
+            $properties = Property::all();
+        }
+        else{
+
+            $properties = Property::all()->random(3);
+
+        }
+        
         return view ('home' , compact('properties'));
+    }
+
+    public function admin()
+    {
+        
+        return view ('/admin');
     }
 }

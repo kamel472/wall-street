@@ -3,6 +3,20 @@
 @section('body')
 	
 	<!-- Page top section -->
+	@if(auth()->user())
+	<section class="page-top-section set-bg" data-setbg= "{{URL::asset('img/page-top-bg/3.jpg')}}" >
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="page-top-text text-white">
+						<h2>Admin Panel</h2>
+						<p>Edit/Delete Property</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	@else
 	<section class="page-top-section set-bg" data-setbg= "{{URL::asset('img/page-top-bg/3.jpg')}}" >
 		<div class="container">
 			<div class="row">
@@ -21,6 +35,7 @@
 			</div>
 		</div>
 	</section>
+	@endif
 	<!-- Page top section end -->
 
 	<!-- Developments section-->
@@ -28,15 +43,7 @@
 
 	<div class="container">
 			
-	<div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
-  </ul>
-</div>
+	
 		</div>
 
 		<div class="container">
@@ -45,7 +52,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="development-box">
 						
-						<img src="{{URL::asset('img/developments/3.jpg')}}" alt="">
+						<img src="{{URL::asset('storage/img/'.$property->main_image)}}" alt="">
 						<div class="dev-text">
 							<h5>{{$property->description}} </h5>
 							<h6><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;{{$property->location}}</h6>
@@ -54,7 +61,29 @@
 								<span>Price</span>
 								<h4>{{$property->price}} LE</h4>
 							</div>
-							<a class="site-btn  btn btn-primary btn-lg" href="{{route('properties.show' , $property->id)}}" role="button">Details</a>
+							
+							<a class=" site-btn btn btn-primary" href="{{route('properties.show' , $property->id)}}" role="button">Details</a>
+							<br><br><br>
+							@if(auth()->user())
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-3">
+									<a class="  btn btn-primary " href="{{route('properties.edit' , $property->id)}}" role="button">Edit</a>
+									</div>
+									<div class="col-sm-3">
+									<form method="post" action="{{route('properties.destroy' , $property->id)}}">
+										@csrf
+										@method('delete')
+										<button class="btn btn-danger"  onclick="return confirm('Do You want to delete?');"> Delete
+										 </button>
+									</form>
+									</div>
+								</div>
+							</div>	
+							@endif
+							
+							
+
 							
 						</div>
 					</div>

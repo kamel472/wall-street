@@ -16,6 +16,7 @@ class PropertyController extends Controller
     {
         $properties = Property::orderBy('created_at', 'desc')->get();
         //->paginate(2);
+    
         return view ('property.index' , compact('properties'));
     }
 
@@ -48,7 +49,35 @@ class PropertyController extends Controller
         $property->price = $request->price;
         $property->downpayment = $request->downpayment;
         $property->installments = $request->installments;
-        $property->images = $request->images;
+        
+        
+
+        $images = $request->file('files');
+        $names = [];
+        foreach ($images as $image){
+        $fileName= $image->getClientOriginalName();
+        
+        $explode= explode(".",$fileName );
+        $fileActualExt = strtolower(end($explode));
+        $fileActualName= $explode[0];
+        $fileUniqueName = $fileActualName.'kamel.'.$fileActualExt;
+        $image->storeAs('img', $fileUniqueName , 'public');
+        array_push($names, $fileUniqueName);
+
+        }
+        $property->carousal_images = json_encode($names);
+
+        $image = $request->file;
+        $fileName= $image->getClientOriginalName();
+        
+        $explode= explode(".",$fileName );
+        $fileActualExt = strtolower(end($explode));
+        $fileActualName= $explode[0];
+        $fileUniqueName = $fileActualName.'kamel.'.$fileActualExt;
+        $image->storeAs('img', $fileUniqueName , 'public');
+      
+        $property->main_image = $fileUniqueName;
+
         $property->save();
 
         return redirect('/properties')->with('message' , 'property posted');
@@ -63,7 +92,13 @@ class PropertyController extends Controller
     public function show(Property $property)
     {
         //$properties = $Property->orderBy('created_at' , 'Desc')->paginate(2);
-        return view('property.show' , compact('property'));
+        
+    $images = json_decode($property->carousal_images , true);
+    
+    
+    
+	
+       return view('property.show' , compact('property' , 'images'));
     }
 
     /**
@@ -72,9 +107,10 @@ class PropertyController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Property $property)
     {
-        //
+        $images = json_decode($property->carousal_images , true);
+        return view('property.edit' , compact('property' , 'images'));
     }
 
     /**

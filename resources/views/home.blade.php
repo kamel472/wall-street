@@ -11,7 +11,8 @@
   </div>
   
 		<div class="hero-slider owl-carousel owl-theme">
-			<div class="hs-item set-bg" data-setbg="img/slider/1.jpg">
+		
+			<div class="hs-item set-bg" data-setbg="{{URL::asset('storage/img/slider/1.jpg')}}">
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-6 col-lg-7">
@@ -20,7 +21,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="hs-item set-bg" data-setbg="img/slider/2.jpg">
+			<div class="hs-item set-bg" data-setbg="{{URL::asset('storage/img/slider/2.jpg')}}">
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-6 col-lg-7">
@@ -29,7 +30,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="hs-item set-bg" data-setbg="img/slider/3.jpg">
+			<div class="hs-item set-bg" data-setbg="{{URL::asset('storage/img/slider/3.jpg')}}">
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-6 col-lg-7">
@@ -50,51 +51,11 @@
 	</section>
 	<!-- Hero section end -->
 
-	<!-- features icons section -->
-	<div class="features-icons-section">
-		<div class="features-icon-item">
-			<i class="flaticon-151-banker"></i>
-			<p>Easy Buying</p>
-		</div>
-		<div class="features-icon-item">
-			<i class="flaticon-151-closing"></i>
-			<p>Ready to Move</p>
-		</div>
-		<div class="features-icon-item">
-			<i class="flaticon-151-maps-and-flags-3"></i>
-			<p>Great Location</p>
-		</div>
-		<div class="features-icon-item">
-			<i class="flaticon-151-step-ladder"></i>
-			<p>Comunity Pool</p>
-		</div>
-		<div class="features-icon-item">
-				<i class="flaticon-151-trees"></i>
-			<p>30% Park</p>
-		</div>
-		<div class="features-icon-item">
-			<i class="flaticon-151-fader"></i>
-			<p>Sunny Location</p>
-		</div>
-		<div class="features-icon-item">
-			<i class="flaticon-151-indoor"></i>
-			<p>Modern Design</p>
-		</div>
-		<div class="features-icon-item">
-			<i class="flaticon-151-maps-and-flags-1"></i>
-			<p>Parking Spaces</p>
-		</div>
-		<div class="features-icon-item">
-			<i class="flaticon-151-transportation"></i>
-			<p>Garage Included</p>
-		</div>
-	</div>
-	<!-- features icons section end-->
-
+	
+<br><br><br>
 	<!-- Intro section -->
 	<section class="intro-section">
 		<div class="container">
-			
 			<h2><i class="fas fa-home" style="color: blue"></i> &nbsp;&nbsp;OUR HOUSES</h2>
 			<BR><BR><BR>
 			<div class="row">
@@ -129,7 +90,9 @@
 			
 		</div>
 		<BR><BR>
-		<div class="features-slider owl-carousel">
+		<div class="features-slider owl-carousel" style=" 
+		left: 20%;
+		">
 			<div class="feature-box">
 				<i class="fas fa-hands-helping"></i>
 				<h5>FRIENDLY ASSISTANCE </h5>

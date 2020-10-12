@@ -24,7 +24,8 @@ class CreatePropertiesTable extends Migration
             $table->integer('price');
             $table->integer('downpayment');
             $table->integer('installments');
-            $table->text('images')->nullable();
+            $table->text('main_image')->nullable();
+            $table->text('carousal_images')->nullable();
             $table->timestamps();
         });
     }

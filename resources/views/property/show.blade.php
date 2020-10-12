@@ -6,9 +6,9 @@
 	<section class="page-top-section set-bg" data-setbg="{{URL::asset('img/page-top-bg/2.jpg')}}">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5">
+				<div class="col-lg-7">
 					<div class="page-top-text text-white">
-						<h2>Property Page</h2>
+						<h2>Property Details</h2>
 					</div>
 				</div>
 			</div>
@@ -70,23 +70,15 @@
 	<!-- Property details section end -->
 
 	<!-- Property features slider -->
+
 	<div class="property-features-slider owl-carousel">
-		<a href="{{URL::asset('img/sample1a.jpeg')}}" class="img-popup-gallery">
-		<img src="{{URL::asset('img/sample1a.jpeg')}}" alt="">
+	@foreach ($images as $image)
+		<a href="{{URL::asset('storage/img/'.$image)}}" class="img-popup-gallery">
+		<img src="{{URL::asset('storage/img/'.$image)}}" alt="">
 			<i class="flaticon-151-reading-glasses"></i>
 		</a>
-		<a href="{{URL::asset('img/sample1b.jpeg')}}" class="img-popup-gallery">
-		<img src="{{URL::asset('img/sample1b.jpeg')}}" alt="">
-			<i class="flaticon-151-reading-glasses"></i>
-		</a>
-		<a href="{{URL::asset('img/sample1c.jpeg')}}" class="img-popup-gallery">
-		<img src="{{URL::asset('img/sample1c.jpeg')}}" alt="">
-			<i class="flaticon-151-reading-glasses"></i>
-		</a>
-		<a href="{{URL::asset('img/sample1d.jpeg')}}" class="img-popup-gallery">
-			<img src="{{URL::asset('img/sample1d.jpeg')}}" alt="">
-			<i class="flaticon-151-reading-glasses"></i>
-		</a>
+
+		@endforeach
 	</div>
 
 	<!-- Property features slider end -->
@@ -112,7 +104,8 @@
 						</ul>
 					</div>
 				</div>
-				<a href="" class="site-btn btn btn-outline-primary">CONTACT US</a>
+				
+				<a href="{{'/contact'}}" class="site-btn btn btn-outline-primary">CONTACT US</a>
 				
 			</div>
 		</div>

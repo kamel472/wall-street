@@ -19,11 +19,10 @@ Route::resource('properties', 'PropertyController');
 
 Route::get('/', 'HomeController@index')->name('home');
 
-//Route::get('/', function () {
-  // return view('home');
-//});
-
-
+Route::group(['middleware' => ['auth']], function () { 
+    
+    Route::get('/admin', 'HomeController@admin');
+});
 
 Route::get('/about', function () {
     return view('about');
@@ -33,10 +32,5 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-//Route::get('/show', function () {
-   // return view('property.show');
-//});
 
-Route::get('/index', function () {
-    return view('index');
-});
+Auth::routes();
