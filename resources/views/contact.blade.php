@@ -31,10 +31,16 @@
 		</div>
 	</section>
 	<!-- Page top section end -->
-
+	
 	<!-- Contact section-->
+	
 	<section class="contact-section">
 		<div class="container">
+		@if(Session::has('success'))
+            <div class="alert alert-success">
+                {{Session::get('success')}}
+            </div>
+			@endif
 			<div class="row">
 				<div class="col-10">
 					<div class="contact-info-box">
@@ -50,19 +56,19 @@
 							</div>
 						</div>
 						<h5 class="contact-title">Send to Us</h5>
-						<form class="contact-form" action="{{url('contact/mail')}}" method="POST">
+						<form class="contact-form" action="{{route('contact.store')}}" method="POST">
 							@csrf
 							<div class="form-field">
 								<img src="img/icons/profile.png" alt="" >
-								<input type="text" placeholder="Full Name" name="name">
+								<input type="text" placeholder="Full Name" name="name" required>
 							</div>
 							<div class="form-field">
 								<img src="img/icons/envelope.png" alt="" >
-								<input type="email" placeholder="Email Address" name="email">
+								<input type="email" placeholder="Email Address" name="email" required>
 							</div>
 							<div class="form-field">
 								<img src="img/icons/chat.png" alt="" >
-								<textarea placeholder="Message" name="message"></textarea>
+								<textarea placeholder="Message" name="message" required></textarea>
 							</div>
 							<button class="site-btn" name="send" type="submit">send</button>
 						</form>

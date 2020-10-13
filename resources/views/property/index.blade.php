@@ -52,7 +52,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="development-box">
 						
-						<img src="{{URL::asset('storage/img/'.$property->main_image)}}" alt="">
+						<img src="{{URL::asset('storage/img/'.$property->main_image)}}" style="width: 500px; height: 300px;"  alt="">
 						<div class="dev-text">
 							<h5>{{$property->description}} </h5>
 							<h6><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;{{$property->location}}</h6>

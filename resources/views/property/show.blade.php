@@ -74,11 +74,10 @@
 	<div class="property-features-slider owl-carousel">
 	@foreach ($images as $image)
 		<a href="{{URL::asset('storage/img/'.$image)}}" class="img-popup-gallery">
-		<img src="{{URL::asset('storage/img/'.$image)}}" alt="">
+		<img src="{{URL::asset('storage/img/'.$image)}}" style="width: 500px; height: 300px;"  alt="">
 			<i class="flaticon-151-reading-glasses"></i>
 		</a>
-
-		@endforeach
+	@endforeach
 	</div>
 
 	<!-- Property features slider end -->
